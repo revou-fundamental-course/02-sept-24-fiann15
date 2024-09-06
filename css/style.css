@@ -72,3 +72,11 @@ input[type="number"] {
 .main-content > aside {
   flex: 1;
 }
+
+.main-content {
+  display: flex;
+}
+
+.main-content > aside {
+  flex: 1;
+}
