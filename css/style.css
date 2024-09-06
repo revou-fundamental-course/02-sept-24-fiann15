@@ -1,0 +1,74 @@
+.main-header {
+  text-align: center;
+}
+
+.selection-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-btn {
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+}
+
+.bisque-color {
+  background-color: bisque;
+}
+
+.cyan-color {
+  background-color: rgb(188, 207, 135);
+}
+
+.luas-segitiga-header {
+  background-color: cornsilk;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  margin: 0px;
+  text-align: center;
+}
+
+.luas-segitiga-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.luas-segitiga-img {
+  height: 300px;
+  width: 300px;
+  background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtQj3damdUMrB7NGGoc1qp7hNlWdpC_GJxnkiaA9JpyXEbPzc24PEalidWP4du9LY7s1g51LweT-7lqlh83cXAf3fTHFTZrDkSlStPgey9bv8LvWrxvV1YnGNb3VRrOXcms6o6WVSmZv4/s1600/Rumus+Luas+Segitiga.png);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+}
+
+.luas-segitiga-form-header {
+  text-align: center;
+}
+
+.input-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper > input {
+  width: 65%;
+}
+
+input[type="number"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+}
+.main-content > aside {
+  flex: 1;
+}
