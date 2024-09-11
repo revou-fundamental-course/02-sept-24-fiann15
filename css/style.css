@@ -190,4 +190,7 @@ input[type="text"] {
   .main-content {
     flex-direction: column;
   }
+  .main-content2 {
+    flex-direction: column;
+  }
 }
