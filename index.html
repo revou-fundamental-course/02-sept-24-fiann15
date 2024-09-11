@@ -6,28 +6,40 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Project Mini</title>
 
     <link rel="stylesheet" href="css\style.css" />
   </head>
 
   <body>
     <header class="main-header">
-      <h1>Welcome to My Project</h1>
+      <h1>Welcome</h1>
       <p>Hi Welcome To My Mini Project</p>
     </header>
-
+    <!--Main Start-->
     <main>
       <section class="selection-content">
-        <button href="#" type="button" class="selection-btn bisque-color">
-          Segitiga
+        <button
+          href="luas"
+          type="button"
+          onclick="pindahHalaman('id')"
+          class="selection-btn bisque-color"
+        >
+          Luas Segitiga & JajarGenjang
         </button>
-        <button href="#" type="button" class="selection-btn cyan-color">
-          Jajar Genjang
+        <button
+          href="keliling"
+          type="button"
+          onclick="pindahHalaman2('keliling')"
+          class="selection-btn cyan-color"
+          id="keliling-segitiga-jajar-genjang-btn"
+        >
+          Keliling Segitiga & Jajar Genjang
         </button>
       </section>
 
-      <section class="main-content">
+      <!-- Luas Left Content -->
+      <section id="luas-segitiga" class="main-content">
         <aside>
           <header>
             <h1 class="luas-segitiga-header">Luas Segitiga</h1>
@@ -35,7 +47,7 @@
 
           <article class="luas-segitiga-content">
             <div class="luas-segitiga-img"></div>
-            <p>Rumus Luas Segitiga</p>
+            <p>Rumus Luas Segitiga: 0.5 x Alas x Tinggi</p>
           </article>
 
           <hr />
@@ -68,10 +80,12 @@
                 value="Hitung"
                 onclick="hitungLuasSegitiga()"
               />
+              <input type="reset" value="Reset" />
             </p>
           </form>
         </aside>
 
+        <!-- Luas Right Content-->
         <aside>
           <header>
             <h1 class="luas-jajar-genjang-header">Luas Jajar Genjang</h1>
@@ -79,7 +93,7 @@
 
           <article class="luas-jajar-genjang-content">
             <div class="luas-jajar-genjang-img"></div>
-            <p>Rumus Luas JajarGenjang</p>
+            <p>Rumus Luas JajarGenjang: Alas x Tinggi</p>
           </article>
 
           <hr />
@@ -115,6 +129,117 @@
                 value="Hitung"
                 onclick="hitungLuasJajarGenjang()"
               />
+              <input type="reset" value="Reset" />
+            </p>
+          </form>
+        </aside>
+      </section>
+      <br />
+
+      <!--Keliling Left Content-->
+      <section id="keliling-segitiga" class="main-content2">
+        <aside>
+          <header>
+            <h1 class="keliling-segitiga-header">Keliling Segitiga</h1>
+          </header>
+
+          <article class="keliling-segitiga-content">
+            <div class="keliling-segitiga-img"></div>
+            <p>Rumus Keliling Segitiga: Sisi 1 + Sisi 2 + Sisi 3</p>
+          </article>
+
+          <hr />
+
+          <form>
+            <header>
+              <h1 class="keliling-segitiga-form-header">
+                Hitung Keliling Segitiga
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="sisi1_segitiga">Sisi 1:</label>
+              <input id="sisi1_segitiga" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="sisi2_segitiga">Sisi 2:</label>
+              <input id="sisi2_segitiga" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="sisi3_segitiga">Sisi 3:</label>
+              <input id="sisi3_segitiga" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="Keliling_segitiga">Keliling:</label>
+              <input
+                id="keliling_segitiga"
+                type="text"
+                name="luas"
+                disabled="true"
+              />
+            </div>
+            <p>
+              <input
+                type="button"
+                value="Hitung"
+                onclick="hitungKelilingSegitiga()"
+              />
+              <input type="reset" value="Reset" />
+            </p>
+          </form>
+        </aside>
+
+        <!--Keliling Right Content-->
+        <aside>
+          <header>
+            <h1 class="keliling-jajar-genjang-header">
+              Keliling Jajar Genjang
+            </h1>
+          </header>
+
+          <article class="keliling-jajar-genjang-content">
+            <div class="keliling-jajar-genjang-img"></div>
+            <p>Rumus Keliling JajarGenjang : 2 (Alas + SisiMiring)</p>
+          </article>
+
+          <hr />
+
+          <form>
+            <header>
+              <h1 class="keliling-jajar-genjang-form-header">
+                Hitung Keliling Jajar Genjang
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="alasp_jajar_genjang">Panjang Alas:</label>
+              <input id="alasp_jajar_genjang" type="number" name="alas" />
+            </div>
+            <div class="input-wrapper">
+              <label for="sisimiring_jajar_genjang">Sisi Miring:</label>
+              <input
+                id="sisimiring_jajar_genjang"
+                type="number"
+                name="sisimiring"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="keliling_jajar_genjang">keliling:</label>
+              <input
+                id="keliling_jajar_genjang"
+                type="text"
+                name="luas"
+                disabled="true"
+              />
+            </div>
+
+            <p>
+              <input
+                type="button"
+                value="Hitung"
+                onclick="hitungKelilingJajarGenjang()"
+              />
+              <input type="reset" value="Reset" />
             </p>
           </form>
         </aside>
